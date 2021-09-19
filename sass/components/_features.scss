@@ -1,0 +1,30 @@
+.features {
+  display: flex;
+  justify-content: space-between;
+  color: $secondary-black;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.features__item {
+  width: 270px;
+}
+.features__background {
+  display: flex;
+  border-radius: 4px;
+  background-color: $secondary-background;
+  margin-bottom: 30px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+}
+.features__name {
+  color: $primary-black;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.features__description {
+  width: 270px;
+}

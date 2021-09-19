@@ -1,0 +1,71 @@
+.members {
+  background-color: $secondary-background;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  padding-bottom: 94px;
+}
+.members__list {
+  display: flex;
+}
+.members__card {
+  background-color: $primary-white;
+  width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+.members__picture {
+  margin-bottom: 30px;
+  display: block;
+}
+.members__name {
+  color: $primary-black;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  margin-bottom: 10px;
+}
+.members__position {
+  color: $secondary-black;
+  margin-bottom: 16px;
+}
+.members__sm-list {
+  display: flex;
+  padding-bottom: 30px;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+.members__sm-item {
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.members__sm-link {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: border-radius $timing-function, background-color $timing-function;
+  &:hover,
+  &:focus {
+    border-radius: 50%;
+    background-color: $accent-color;
+  }
+}
+.members__sm-icon {
+  width: 20px;
+  height: 20px;
+  fill: $sm-icon-color;
+  transition: fill $timing-function;
+  .members__sm-link:hover &,
+  .members__sm-link:focus & {
+    fill: $primary-white;
+  }
+}

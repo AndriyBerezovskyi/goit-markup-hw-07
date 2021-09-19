@@ -1,0 +1,10 @@
+.portfolio__filters {
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+}
+.portfolio__filters-item:not(:first-child) {
+  margin-left: 8px;
+}
